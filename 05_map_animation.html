@@ -9,15 +9,38 @@
 <style>
   body { margin: 0; padding: 0; }
   #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  .map.overlay{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+  }
+
 
 </style>
 </head>
 <body>
 
 <div id="map"></div>
+<div class="map-overlay top">
+  <button style="font-size: 2em;" onclick="move()">
+    Show stops between MIT and Harvard
+  </button>
+</div>
+
 
 <script>
+  mapboxgl.accessToken ='pk.eyJ1IjoiamFjb2JoYXJ0IiwiYSI6ImNrb3EwdmsxeDA4bHUycm5sMWkxMzN4c2gifQ.q87x3zutNoUuUuUkXUrLqQ'
 
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-71.104081, 42.365554],
+    zoom: 14,
+  });
+
+  var marker = new mapboxgl.Marker()
+    .setLngLat([-71.092761, 42.357575])
+    .addTo(map);
 
 
 </script>
