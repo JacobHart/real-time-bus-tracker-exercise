@@ -12,7 +12,7 @@ Using the Mapbox API a map containing the bus route from MIT to Harvard is shown
 There are no dependencies. This should run inside the browser without the need for a proxy server
 
 ## Roadmap of future improvements
-In location of the busstops is commented out in the code. An improvement whould be to show the busstops on the map with a small icon and the busses moving along in a large icon. 
+The location of the busstops is commented out in the code. An improvement whould be to show the busstops on the map with a small icon and the busses moving along in a large icon. 
 
 
 ## License
